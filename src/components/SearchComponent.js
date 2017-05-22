@@ -42,8 +42,8 @@ export default class SearchComponent extends React.Component {
         return (
             <div>
                 <div>
-                    <form className="col-xs-offset-2">
-                        <div className="form-group col-xs-8">
+                    <form>
+                        <div className="form-group col-7 offset-2 formInput">
                             <input type="text" className="form-control" ref="searchQuery" id="searchQuery" placeholder="SEARCH....." />
                         </div>
                         <button type="button" className="btn btn-default" onClick={this.searchGithub.bind(this)}>Search</button>
@@ -51,8 +51,8 @@ export default class SearchComponent extends React.Component {
                 </div>
                 <hr />
                 <div>
-                    <form className="col-xs-offset-2">
-                        <div className="form-group col-xs-8">
+                    <form >
+                        <div className="form-group col-7 offset-2 formInput">
                             <select className="form-control" ref="sortQuery" >
                                 <option value="">SORT BY</option>
                                 <option value="WATCH">WATCH</option>
@@ -72,8 +72,8 @@ export default class SearchComponent extends React.Component {
                     <ResultComponent {...this.props} />
                 </div>
                 <div>
-                    <h4 className="pull-right"><a onClick={this.gotonext.bind(this)}>NEXT</a></h4>
-                    <h4 className="pull-left"><a onClick={this.gotoprevious.bind(this)}>PREVIOUS</a></h4>
+                    <h4 className="float-right"><a onClick={this.gotonext.bind(this)}>NEXT</a></h4>
+                    <h4 className="float-left"><a onClick={this.gotoprevious.bind(this)}>PREVIOUS</a></h4>
                 </div>
             </div>
         )

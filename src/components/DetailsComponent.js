@@ -22,7 +22,7 @@ export default class DetailsComponent extends React.Component {
 
             if (typeof this.props.contributors !== "undefined" && (this.props.contributors.length > 0 || this.props.contributors.length == undefined)) {
                 contributors = this.props.contributors.map(function (item) {
-                    return (<div className="bg-info results contributors ">
+                    return (<div className="bg-info contributors ">
                         <img src={item.avatar_url} className="img-circle" width="30" height="23" />
                         <p>{item.login}</p>
                     </div>)
